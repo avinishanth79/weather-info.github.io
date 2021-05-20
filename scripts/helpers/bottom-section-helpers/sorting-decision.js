@@ -1,6 +1,6 @@
-import {gridBoxFunc} from '/grid-box.js';
-import {continentAscendingFunc} from '/continent-ascending.js';
-import {continentDescendingFunc} from '/continent-descending.js';
+import {gridBoxFunc} from './grid-box.js';
+import {continentAscendingFunc} from './continent-ascending.js';
+import {continentDescendingFunc} from './continent-descending.js';
 
 export function SortingDecisionFunc(continentClick,temperatureClick,continentAscendingArray,continentDescendingArray,gridBoxRef,A,B){
 

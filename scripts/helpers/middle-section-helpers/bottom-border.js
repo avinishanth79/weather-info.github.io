@@ -1,4 +1,4 @@
-import {SUNNY,SNOWFLAKE,RAINY} from '/constant.js';
+import {SUNNY,SNOWFLAKE,RAINY} from './constant.js';
 
 export function BorderFunc(sunnyIconRef,coldyIconRef,rainyIconRef,weatherType){
 
