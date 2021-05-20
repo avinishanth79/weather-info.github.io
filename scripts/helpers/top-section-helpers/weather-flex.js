@@ -1,4 +1,4 @@
-import {tempConditionFunc} from './temperature-condition.js';
+import {tempConditionFunc} from '../top-section-helpers/temperature-condition.js';
 
 export function weatherFlexFunc(tempFlexRef,weatherIconFlexRef,tempWeatherInfo,tempNextFiveHrsRef){
     //now flex
