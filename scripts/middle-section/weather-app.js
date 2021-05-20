@@ -1,6 +1,6 @@
 import {scrollButtonFunc} from '../helpers/middle-section-helpers/scroll-button.js';
 import {sortingFunc} from '../helpers/middle-section-helpers/sorting.js';
-import {displayCardsFunc} from '.../helpers/middle-section-helpers/display-card.js';
+import {displayCardsFunc} from '../helpers/middle-section-helpers/display-card.js';
 import {BorderFunc} from '../helpers/middle-section-helpers/bottom-border.js';
 import {sunnyFilterFunc,coldyFilterFunc,rainyFilterFunc} from '../helpers/middle-section-helpers/filtering.js';
 import {SUNNY,SNOWFLAKE,RAINY} from '../helpers/middle-section-helpers/constant.js';
