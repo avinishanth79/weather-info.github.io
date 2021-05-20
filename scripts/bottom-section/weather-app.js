@@ -1,6 +1,6 @@
-import {arrowChangeFunc} from '/scripts/helpers/bottom-section-helpers/arrow-change.js';
-import {SortingDecisionFunc} from '/scripts/helpers/bottom-section-helpers/sorting-decision.js';
-import {weatherInfoRef} from '/weather-data/request.js';
+import {arrowChangeFunc} from '../helpers/bottom-section-helpers/arrow-change.js';
+import {SortingDecisionFunc} from '../helpers/bottom-section-helpers/sorting-decision.js';
+import {weatherInfoRef} from '../../weather-data/request.js';
 
 //referencing two icons
 const continentRef = document.querySelector("#bottom_icon_1");               

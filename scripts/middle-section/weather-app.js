@@ -1,10 +1,10 @@
-import {scrollButtonFunc} from '/scripts/helpers/middle-section-helpers/scroll-button.js';
-import {sortingFunc} from '/scripts/helpers/middle-section-helpers/sorting.js';
-import {displayCardsFunc} from '/scripts/helpers/middle-section-helpers/display-card.js';
-import {BorderFunc} from '/scripts/helpers/middle-section-helpers/bottom-border.js';
-import {sunnyFilterFunc,coldyFilterFunc,rainyFilterFunc} from '/scripts/helpers/middle-section-helpers/filtering.js';
-import {SUNNY,SNOWFLAKE,RAINY} from '/scripts/helpers/middle-section-helpers/constant.js';
-import {weatherInfoRef} from '/weather-data/request.js';
+import {scrollButtonFunc} from '../helpers/middle-section-helpers/scroll-button.js';
+import {sortingFunc} from '../helpers/middle-section-helpers/sorting.js';
+import {displayCardsFunc} from '.../helpers/middle-section-helpers/display-card.js';
+import {BorderFunc} from '../helpers/middle-section-helpers/bottom-border.js';
+import {sunnyFilterFunc,coldyFilterFunc,rainyFilterFunc} from '../helpers/middle-section-helpers/filtering.js';
+import {SUNNY,SNOWFLAKE,RAINY} from '../helpers/middle-section-helpers/constant.js';
+import {weatherInfoRef} from '../../weather-data/request.js';
 
 const boxContainerRef = document.querySelector("#box_container");
 const leftClickRef = document.querySelector("#backward_image_button");
