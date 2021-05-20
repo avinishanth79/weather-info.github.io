@@ -1,10 +1,10 @@
 "use strict"
-import {timerFunc} from '/scripts/helpers/top-section-helpers/timer.js';
-import {dateFunc} from '/scripts/helpers/mutual-helpers/date.js';
-import {temperatureFunc} from '/scripts/helpers/top-section-helpers/temperature.js';
-import {weatherFlexFunc} from '/scripts/helpers/top-section-helpers/weather-flex.js';
-import {CityObj} from '/scripts/helpers/mutual-helpers/proto.js';
-import {weatherInfoRef,fiveHoursInfo} from '/weather-data/request.js';
+import {timerFunc} from '../helpers/top-section-helpers/timer.js';
+import {dateFunc} from '../helpers/mutual-helpers/date.js';
+import {temperatureFunc} from '../helpers/top-section-helpers/temperature.js';
+import {weatherFlexFunc} from '../helpers/top-section-helpers/weather-flex.js';
+import {CityObj} from '../helpers/mutual-helpers/proto.js';
+import {weatherInfoRef,fiveHoursInfo} from '../../weather-data/request.js';
 
 const cityRef = document.querySelector("#city_dropdown");
 const cityListRef = document.querySelector("#mycities");
