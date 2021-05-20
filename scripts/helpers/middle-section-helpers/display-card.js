@@ -1,4 +1,4 @@
-import {dateFunc} from '/scripts/helpers/mutual-helpers/date.js';
+import {dateFunc} from '../mutual-helpers/date.js';
 
 const boxContainerRef = document.querySelector("#box_container");
 
