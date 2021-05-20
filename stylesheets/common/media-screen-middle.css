@@ -1,0 +1,48 @@
+@media screen and (max-width:1200px){
+    .middle_header{
+        font-size: 22px;
+    }
+    .weather_icon_1, .weather_icon_2, .weather_icon_3{ 
+        width: 32px;
+        height: 32px;
+        position: relative;
+        top: -10px;
+    }
+    .dropdown_heading{
+        font-size: 20px;
+    }
+    .numbers_dropdown{
+        font-size: 20px;
+    }
+    .box{
+        top: 15px;
+        min-width: 250px;
+        height: 190px;
+    }
+    .box_img{
+        width: 30px;
+        height: 30px;
+    }
+    .mid_temp{
+        font-size: 19px;
+    }
+    .box>ul{
+        top: -32px;
+        line-height: 36px;
+        font-size: 19px;
+    }
+    .box_icon{
+        width: 100px;
+        height: 100px;
+    }
+    .backward_image_button, .forward_image_button{
+        height: 26px;
+        width: 26px;
+    }   
+}
+
+@media screen and (max-width:900px){
+    .middle_header_2{
+        padding-left: 100px;
+    }   
+}

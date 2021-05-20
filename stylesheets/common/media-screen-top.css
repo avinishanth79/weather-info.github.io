@@ -1,0 +1,129 @@
+@media screen and (max-width:1200px){
+    .top_container_1{
+        min-width: 110px;
+    }
+    .city_icon{
+        width: 100px;
+        height: 100px;
+    }
+    .top_container_2{
+        min-width: 100px;
+    }
+    .city_dropdown{
+        top: 60px;
+        font-size: 24px;
+        width: 130px;
+    }
+    .time{
+        top: 110px;
+        font-size: 21px;
+    }
+    .date{
+        top: 137px;
+        font-size: 19px;
+    }
+    .am_pm_icon{
+        width: 35px;
+        height: 35px;
+        padding-left: 79px;
+        padding-top: 97px;
+    }
+    .top_container_4> #temp_grid1{
+        padding-left: 40px;
+    }
+    .top_container_4> #temp_grid2{
+        padding-left: 40px;
+    }
+    #temp_grid1{
+        font-size: 21px;
+    }
+    #temp_grid1>b{
+        font-size: 21px;
+    }
+    #temp_grid2{
+        font-size: 21px;
+    }
+    #temp_grid2>b{
+        font-size: 21px;
+    }
+    .hours_flex{
+        font-size: 17px;
+    }
+    .lines_flex{
+        font-size: 16px;
+    }
+    .weather_icon_flex>img{
+        width: 32px;
+        height: 32px;
+    }
+    .numbers_flex{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .top_container_1{
+        min-width: 100px;
+    }
+    .city_icon{
+        width: 90px;
+        height: 90px;
+    }
+    .top_container_2{
+        min-width: 80px;
+    }
+    .city_dropdown{
+        top: 65px;
+        font-size: 21px;
+        width: 100px;
+    }
+    .time{
+        top: 105px;
+        font-size: 19px;
+    }
+    .date{
+        top: 132px;
+        font-size: 17px;
+    }
+    .am_pm_icon{
+        padding-left: 75px;
+        padding-top: 90px;
+    }
+    .top_container_4> #temp_grid1{
+        padding-top: 22.5px;
+        padding-left: 60px;
+    }
+    .top_container_4> #temp_grid2{
+        padding-left: 60px;
+    }
+    .top_container_5{
+        padding-top: 2px;
+        padding-left: 140px;
+        padding-right: 10px;
+    }
+    #temp_grid1{
+        font-size: 19px;
+    }
+    #temp_grid1>b{
+        font-size: 19px;
+    }
+    #temp_grid2{
+        font-size: 19px;
+    }
+    #temp_grid2>b{
+        font-size: 19px;
+    }
+    .hours_flex{
+        font-size: 15px;
+    }
+    .lines_flex{
+        font-size: 15px;
+    }
+    .weather_icon_flex>img{
+        width: 28px;
+        height: 28px;
+    }
+    .numbers_flex{
+        font-size: 16px;
+    }
+}

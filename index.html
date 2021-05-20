@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>task-1</title>
+        <link rel="stylesheet" href="stylesheets\common\weather-app.css">
+        <link rel="stylesheet" href="stylesheets\common\media-screen-top.css">
+        <link rel="stylesheet" href="stylesheets\common\media-screen-middle.css">
+        <link rel="stylesheet" href="stylesheets\common\media-screen-bottom.css">
+    </head>
+    <body class="background_image" background="assets\time-icons\background.svg">
+        <section class="top">
+            <div class="top_container_1">
+                <div">
+                    <img class="city_icon" id="city_icon" src="assets\city-icon\dublin.svg" />
+                </div>
+            </div>
+            <div class="top_container_2">
+                <forms action=" " id="list_id-">
+                    <input list="mycities" type="text" class="city_dropdown" id="city_dropdown" placeholder="search here">
+                    <datalist name="cty" id="mycities">
+                    </datalist>
+                </forms>
+                <div class="time" id="time">
+                    10:10:44
+                </div>
+                <div class="date" id="date">
+                    01-Mar-2020
+                </div>
+                <div>
+                    <img class="am_pm_icon" id="am_pm_icon" src="assets\time-icons\amState.svg"/>
+                </div>
+            </div>
+            <div class="top_container_3">
+                <div class="temp_grid" id="temp_grid1">
+                    Temp&#8451<br>
+                    <b class="temp_cel" id="temp_cel">25&#8451</b>
+                </div>
+                <div class="temp_grid" id="temp_grid2">
+                    TempF<br>
+                    <b class="temp_fah"id="temp_fah">78F</b>
+                </div>
+            </div>
+            <div class="top_container_4">
+                <div class="temp_grid" id="temp_grid1">
+                    Humidity<br>
+                    <b class="humid" id="humid">26%</b>
+                </div>
+                <div class="temp_grid" id="temp_grid2">
+                    Precipitation<br>
+                    <b class="precip" id="precip">0%</b>
+                </div>
+            </div>
+            <div class="top_container_5">
+                <div class="hours_flex" id="hours_flex">
+                    <span>NOW</span>
+                    <span>11 AM</span>
+                    <span>12 PM</span>
+                    <span>1 PM</span>
+                    <span>2 PM</span>
+                    <span>3 PM</span>
+                </div> 
+                <div class="lines_flex">
+                    <span><b>|</b></span>
+                    <span>|</span>
+                    <span><b>|</b></span>
+                    <span>|</span>
+                    <span><b>|</b></span>
+                    <span>|</span>
+                    <span><b>|</b></span>
+                    <span>|</span>
+                    <span><b>|</b></span>
+                    <span>|</span>
+                    <span><b>|</b></span>
+                </div> 
+                <div class="weather_icon_flex" id="weather_icon_flex">
+                    <img src="assets\weather-icon\cloudyIcon.svg" />
+                    <img src="assets\weather-icon\rainyIcon.svg" />
+                    <img src="assets\weather-icon\windyIcon.svg" />
+                    <img src="assets\weather-icon\rainyIcon.svg" />
+                    <img src="assets\weather-icon\windyIcon.svg" />
+                    <img src="assets\weather-icon\rainyIcon.svg" />
+                </div>
+                <div class="numbers_flex" id="numbers_flex">
+                    <span>26</span>
+                    <span>17</span>
+                    <span>27</span>
+                    <span>18</span>
+                    <span>8</span>
+                    <span>26</span>
+                </div>
+            </div>
+        </section>
+        <section class="background_colour">
+            <section class="middle">
+                <div class="middle_top">
+                    <div class="middle_header">
+                        Top cities around world
+                    </div>
+                    <div class="middle_header_2">
+                        <div class="weather_icon">
+                            <img  class="weather_icon_1" id="weather_icon_1" src="assets\weather-icon\sunnyIcon.svg" style="border-bottom: 2px solid rgb(57, 225, 255);" />
+                        </div>
+                        <div class="weather_icon">
+                            <img class="weather_icon_2" id="weather_icon_2" src="assets\weather-icon\snowflakeIcon.svg"/>
+                        </div>
+                        <div class="weather_icon">
+                            <img class="weather_icon_3" id="weather_icon_3" src="assets\weather-icon\rainyIcon.svg"/>
+                        </div>
+                    </div>
+                    <div class="middle_header_3">
+                        <form>
+                            <label class="dropdown_heading">Display Top</label>
+                            <input class="numbers_dropdown" type="number" placeholder="4" id="numbers_dropdown" min="3" max="10">
+                        </form>
+                    </div>
+                </div>
+                <div class="middle_container">
+                    <div class="backward_image">
+                        <div class="backward_image_button" id="backward_image_button" type="button">
+                            <img  src="assets\time-icons\backwardArrow.svg" />
+                        </div>
+                    </div>
+                    <div class="box_container" id="box_container">
+    
+                    </div>
+                    <div class="forward_image">
+                        <div class="forward_image_button" id="forward_image_button" type="button">
+                            <img  src="assets\time-icons\forwardArrow.svg" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bottom">
+                <div class="down">
+                    <div class="bottom_heading">
+                        Cities accross continents at a glance
+                    </div>
+                    <div class="bottom_continent" id="bottom_continent">
+                        <div>
+                            Continent Name <img class="bottom_icon_1" id="bottom_icon_1" src="assets\time-icons\arrowdown.svg"/>
+                        </div>
+                        <div>
+                            Temperature <img class="bottom_icon_2" id="bottom_icon_2" src="assets\time-icons\arrowdown.svg" />                           
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_bottom">
+                    <div class="bottom_flex" id="bottom_flex">
+                        <div class="bottom_flex_box">
+                            <div class="bottom_country">
+                                Asia
+                                <div class="bottom_temp">
+                                    38&#8451
+                                </div>
+                            </div>
+                            <div class="bottom_time">
+                                Delhi, 10:10 AM
+                                <div class="bottom_icon">
+                                    <img src="assets\weather-icon\humidityIcon.svg">
+                                    53%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom_flex_box">
+                            <div class="bottom_country">
+                                Africa
+                                <div class="bottom_temp">
+                                    38&#8451
+                                </div>
+                            </div>
+                            <div class="bottom_time">
+                                Egypt, 10:10 AM
+                                <div class="bottom_icon">
+                                    <img src="assets\weather-icon\humidityIcon.svg">
+                                    53%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom_flex_box">
+                            <div class="bottom_country">
+                                Europe
+                                <div class="bottom_temp">
+                                    26&#8451
+                                </div>
+                            </div>
+                            <div class="bottom_time">
+                                London, 10:10 AM
+                                <div class="bottom_icon">
+                                    <img src="assets\weather-icon\humidityIcon.svg">
+                                    53%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom_flex_box">
+                            <div class="bottom_country">
+                                Asia
+                                <div class="temp">
+                                    37&#8451
+                                </div>
+                            </div>
+                            <div class="bottom_time">
+                                Chennai, 10:10 AM
+                                <div class="bottom_icon">
+                                    <img src="assets\weather-icon\humidityIcon.svg">
+                                    53%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom_flex_box">
+                            <div class="bottom_country">
+                                Africa
+                                <div class="bottom_temp">
+                                    32&#8451
+                                </div>
+                            </div>
+                            <div class="bottom_time">
+                                Egypt, 10:10 AM
+                                <div class="bottom_icon">
+                                    <img src="assets\weather-icon\humidityIcon.svg">
+                                    53%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom_flex_box">
+                            <div class="bottom_country">
+                                Europe
+                                <div class="bottom_temp">
+                                    22&#8451
+                                </div>
+                            </div>
+                            <div class="bottom_time">
+                                London, 10:10 AM
+                                <div class="bottom_icon">
+                                    <img src="assets\weather-icon\humidityIcon.svg">
+                                    53%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom_flex_box">
+                            <div class="bottom_country">
+                                Asia
+                                <div class="bottom_temp">
+                                    36&#8451
+                                </div>
+                            </div>
+                            <div class="bottom_time">
+                                Chennai, 10:10 AM
+                                <div class="bottom_icon">
+                                    <img src="assets\weather-icon\humidityIcon.svg">
+                                    53%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom_flex_box">
+                            <div class="bottom_country">
+                                Europe
+                                <div class="bottom_temp">
+                                    30&#8451
+                                </div>
+                            </div>
+                            <div class="bottom_time">
+                                london, 10:10 AM
+                                <div class="bottom_icon">
+                                    <img src="assets\weather-icon\humidityIcon.svg">
+                                    53%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom_flex_box">
+                            <div class="bottom_country">
+                                South America
+                                <div class="bottom_temp">
+                                    35&#8451
+                                </div>
+                            </div>
+                            <div class="bottom_time">
+                                Brazil, 10:10 AM
+                                <div class="bottom_icon">
+                                    <img src="assets\weather-icon\humidityIcon.svg">
+                                    53%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom_flex_box">
+                            <div class="bottom_country">
+                                Asia
+                                <div class="bottom_temp">
+                                    36&#8451
+                                </div>
+                            </div>
+                            <div class="bottom_time">
+                                Delhi, 10:10 AM
+                                <div class="bottom_icon">
+                                    <img src="assets\weather-icon\humidityIcon.svg">
+                                    53%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom_flex_box">
+                            <div class="bottom_country">
+                                Europe
+                                <div class="bottom_temp">
+                                    28&#8451
+                                </div>
+                            </div>
+                            <div class="bottom_time">
+                                london, 10:10 AM
+                                <div class="bottom_icon">
+                                    <img src="assets\weather-icon\humidityIcon.svg">
+                                    53%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom_flex_box">
+                            <div class="bottom_country">
+                                South America
+                                <div class="bottom_temp">
+                                    32&#8451
+                                </div>
+                            </div>
+                            <div class="bottom_time">
+                                Brazil, 10:10 AM
+                                <div class="bottom_icon">
+                                    <img src="assets\weather-icon\humidityIcon.svg">
+                                    53%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <script type="module" src="scripts\top-section\weather-app.js"></script>
+        <script type="module" src="scripts\middle-section\weather-app.js"></script>
+        <script type="module" src="scripts\bottom-section\weather-app.js"></script>
+        <script type="module" src="weather-data\request.js"></script>
+    </body>
+</html>
